@@ -1,0 +1,136 @@
+ {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f9f7ff 0%, #f0f9f0 100%);
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 1083px;
+}
+
+nav ul {
+    text-align: left;
+    display: inline;
+    margin: 0;
+    padding: 1em 1em 1em 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: .01em;
+    position: relative;
+    padding: 1em 3em;
+    background: #6a11cb;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+nav li a {
+    padding-bottom: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 21px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Consolas, monaco, monospace;
+    color: yellow;
+}
+
+nav ul li:hover {
+    background-color: #8a2be2;
+}
+
+nav ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 3.5em;
+    left: 0;
+    width: 16em;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+nav ul li ul li {
+    background-color: #9370db;
+    display: block;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #000;
+}
+
+nav ul li ul li:hover {
+    background-color: #7b68ee;
+}
+nav ul li:hover ul {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+#frameset {
+    overflow: hidden;
+    width: 1083px;
+    margin: 2em auto 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    float: left;
+    width: 49%;
+    height: 300px;
+    background: #f3e6ff;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    height: 300px;
+    background: #e6f7e6;
+}
+
+.left:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(46, 139, 87, 0.2);
+}
+
+footer {
+    background: linear-gradient(135deg, #2e8b57 0%, #6a11cb 100%); /* Градиент зеленый-фиолетовый */
+    color: #ffffff;
+    width: 1083px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-top: 20px;
+    clear: both;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
