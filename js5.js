@@ -4,25 +4,26 @@ $(function () {
 	$('.mainImg').height($('.mainImg img').height());
 	
 	$('.thumbnails img').click(function () {
-		$(this).addClass('active').parent().siblings().find(img).removeClass('active');
+		$(this).addClass('active').parent().siblings().find('img').removeClass('active');
 		$('.mainImg img').hide().attr('scr', $(this).attr('scr')).fadeIn(300);
 	});
 	
 	$('.mainImg').click(function (){
 		if ($(this).hasClass('fa-chevron-right')){
 			console.log('right');
-			if ($('.thumbnails .active').parent().is(':last-of-type')){
-				$('.thumbnails .active').parent().parent().find('li:eq(0)').find('img').click();
+			if ($('.thumbnails.active').parent().is(':last-of-type')){
+				$('.thumbnails.active').parent().parent().find('li:eq(0)').find('img').click();
 			} else {
-				$('.thumbnails .active').parent().next().find('img').click();
+				$('.thumbnails.active').parent().next().find('img').click();
 			}
 		} else {
 			console.log('left');
-			if ($('.thumbnails .active').parent().is(':first-of-type')) {
-				$('.thumbnails .active').parent().parent().find('li:last-of-type').find('img').click();
+			if ($('.thumbnails.active').parent().is(':first-of-type')) {
+				$('.thumbnails.active').parent().parent().find('li:last-of-type').find('img').click();
 			} else {
-				$('.thumbnails .active').parent().prev().find('img').click();
+				$('.thumbnails.active').parent().prev().find('img').click();
 			}
 		}
 	});
+
 });
