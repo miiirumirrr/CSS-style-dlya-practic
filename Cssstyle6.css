@@ -101,7 +101,7 @@ body {
 
 /* Изображение на обложке */
 .card .cover img {
-  width: 60%;
+  width: 150%;
   height: 320px;
   object-fit: cover;
 }
@@ -224,3 +224,4 @@ body {
   left: 0;
 
 }
+
