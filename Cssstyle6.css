@@ -1,19 +1,12 @@
-/* Общие параметры блока */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/* Фон страницы и отступы */
 body {
   padding-top: 50px;
   padding-bottom: 20px;
-  background-color: #c3cfe2;
-  min-height: 100vh;
 }
-
-/* Классы навигации по кнопкам flip-карт */
 .btn-flip-extend, .btn-flip:hover, .btn-flip:focus {
   background-color: transparent;
   -moz-box-shadow: none;
@@ -27,8 +20,6 @@ body {
   color: #666666;
   background-color: transparent;
 }
-
-/* Класс контейнера карты */
 .card-container {
   -moz-perspective: 800px;
   -webkit-perspective: 800px;
@@ -43,8 +34,6 @@ body {
   width: 100%;
   height: 320px;
 }
-
-/* Классы движения flip-карт */
 .card-container:not(.manual-flip):hover .front {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -69,8 +58,6 @@ body {
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-
-/* Класс самой карты */
 .card {
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -88,8 +75,6 @@ body {
   max-width: 412px;
   margin: 0 auto;
 }
-
-/* Класс для обложки flip-карт */
 .card .cover {
   -moz-border-radius: 4px 4px 0 0;
   -webkit-border-radius: 4px;
@@ -97,16 +82,11 @@ body {
   height: 320px;
   overflow: hidden;
   z-index: -2;
-}
-
-/* Изображение на обложке */
-.card .cover img {
-  width: 150%;
+  }
+  .card .cover img {
+  width: 100%;
   height: 320px;
-  object-fit: cover;
 }
-
-/* Класс для контента */
 .card .content {
   background-color: transparent;
   -moz-box-shadow: none;
@@ -114,56 +94,40 @@ body {
   box-shadow: none;
   padding: 10px 20px 20px;
 }
-
-/* Основной блок */
 .card .content .main {
   min-height: 140px;
 }
-
-/* Название карты */
 .card .name {
   font-size: 32px;
   text-align: center;
 }
-
-/* Заголовок в названии карты */
 .card h3 {
   margin-top: -180px;
   font-weight: 300;
   line-height: 20px;
+  color: black
 }
-
-/* Футер flip-карт */
 .card .footer {
   margin-top: -80px;
   text-align: center;
 }
-
-/* Кнопка футера */
 .card .footer .btn-simple {
   margin-top: -6px;
 }
-
 .back .btn-simple {
   position: absolute;
   left: 0;
   bottom: 4px;
 }
-
-/* Текст с обратной стороны */
 .card .header {
   padding: 55px 20px;
-  background: linear-gradient(to top, #f5f7fa 0%, #c3cfe2 100%);
-  color: black;
+  background: linear-gradient(to top, #FF9314, #FF69B4, #FFC0CB);
+  color: blue;
   font-size: 11pt;
 }
-
-/* Пространство для текста с обратной стороны */
 .card .back .content .main {
   height: 165px;
 }
-
-/* Лицевая сторона карты */
 .front {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -193,8 +157,6 @@ body {
   left: 0;
   z-index: 2;
 }
-
-/* Обратная сторона карты */
 .back {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -222,6 +184,4 @@ body {
   height: 320px;
   top: 0;
   left: 0;
-
 }
-
