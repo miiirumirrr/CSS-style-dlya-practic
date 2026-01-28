@@ -63,13 +63,6 @@ body {
     min-height: 250px;
 }
 
-/* Эффекты при наведении */
-.l-grid__item:hover {
-    transform: translateY(-8px);
-    z-index: 10;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
 /* Поддержка CSS Grid */
 @supports(display: grid) {
     .support-warning {
@@ -144,16 +137,10 @@ body {
     opacity: 0.95;
 }
 
-/* Цветные темы блоков */
-
 /* Синяя тема */
 .theme-blue {
     background: linear-gradient(135deg, #26d0ce 0%, #26d0ce 100%);
     color: #ffffff;
-}
-
-.theme-blue .content-icon {
-    color: #a3e4ff;
 }
 
 /* Темно-синяя тема */
@@ -162,9 +149,6 @@ body {
     color: #ffffff;
 }
 
-.theme-navy .content-icon {
-    color: #74b9ff;
-}
 
 /* Бирюзовая тема */
 .theme-teal {
@@ -172,9 +156,6 @@ body {
     color: #ffffff;
 }
 
-.theme-teal .content-icon {
-    color: #7efff5;
-}
 
 /* Классы для иллюстраций */
 .img-background {
@@ -201,7 +182,6 @@ body {
     z-index: 2;
 }
 
-/* Иллюстрации с CSS-градиентами (вместо реальных изображений) */
 .img-background--sea {
      background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://raw.githack.com/miiirumirrr/CSS-style-dlya-practic/main/%D0%90%D1%80%D1%85%D0%B8%D0%B2%202025%20(148).jpg');
 }
@@ -216,5 +196,6 @@ body {
      background-repeat: no-repeat;
      color: #fff;
 }
+
 
 
