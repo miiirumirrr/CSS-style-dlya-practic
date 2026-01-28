@@ -1,0 +1,100 @@
+/* Общий селектор */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Смягчение перехода между картинками */
+.gallery img {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* Класс галереи */
+.gallery {
+  width: 100%;
+  margin: auto;
+  border: 2px solid #bdc3c7;
+  padding: 15px;
+  background-color: #FFF;
+  border-radius: 10px;
+ }
+
+/* Максимальный размер изображений */
+.gallery img {
+  max-width: 100%;
+ }
+
+/* Основное фото в галерее */
+.gallery .mainImg {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.gallery .mainImg img {
+  display: block;
+  margin: auto;
+}
+
+/* Фон, цвет и позиция объектов навигации */
+.gallery .mainImg i {
+  color: #FFF;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* Стрелки навигации */
+.gallery .mainImg i.fa-chevron-left {
+  left: 20px;
+  color: blue;
+}
+
+.gallery .mainImg i.fa-chevron-right {
+  right: 20px;
+  color: teal;
+}
+
+/* Миниатюры */
+.gallery .thumbnails {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery .thumbnails li {
+  cursor: pointer;
+}
+
+.gallery .thumbnails li:not(:last-child) {
+  margin-right: 5px;
+}
+
+.gallery .thumbnails li img {
+  border: 2px solid #bdc3c7;
+  padding: 2px;
+  background-color: #FFF;
+  opacity: .7;
+}
+
+/* Цвет активной миниатюры */
+.gallery .thumbnails li img.active {
+  border-color: #3498db;
+  opacity: 1;
+}
