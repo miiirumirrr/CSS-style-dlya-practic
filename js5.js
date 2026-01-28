@@ -11,19 +11,20 @@ $(function () {
 	$('.mainImg i').click(function () {    
     if ($(this).hasClass('fa-chevron-right')) {
       console.log('right');
-      if ($('.thumbnails .active').parent().is(':last-of-type')) {
-        $('.thumbnails .active').parent().parent().find('li:eq(0)').find('img').click();
+      if ($('.thumbnails.active').parent().is(':last-of-type')) {
+        $('.thumbnails.active').parent().parent().find('li:eq(0)').find('img').click();
       } else {
-        $('.thumbnails .active').parent().next().find('img').click();
+        $('.thumbnails.active').parent().next().find('img').click();
       }
     } else {
       console.log('left');
-      if ($('.thumbnails .active').parent().is(':first-of-type')) {
-        $('.thumbnails .active').parent().parent().find('li:last-of-type').find('img').click();
+      if ($('.thumbnails.active').parent().is(':first-of-type')) {
+        $('.thumbnails.active').parent().parent().find('li:last-of-type').find('img').click();
       } else {
-        $('.thumbnails .active').parent().prev().find('img').click();
+        $('.thumbnails.active').parent().prev().find('img').click();
       }
     }
   });
 });
+
 
