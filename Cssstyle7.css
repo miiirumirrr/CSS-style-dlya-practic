@@ -1,0 +1,48 @@
+/* Общие стили */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Стили для header */
+header {
+  background: linear-gradient(135deg, #8B0000 0%, #8A2BE2 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для footer */
+footer {
+  background: linear-gradient(135deg, #4B0082 0%, #800000 100%);
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* Стили для title-bar */
+.title-bar {
+  background-color: #C71585;
+  color: white;
+}
+
+/* Стили для wrap */
+#wrap {
+  background-color: #FFF0F5;
+  min-height: 600px;
+  padding-bottom: 30px;
+}
+
+/* Стили для submenu */
+.submenu.menu.vertical {
+  background-color: #DB7093;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для callout secondary */
+.row.expanded.callout.secondary {
+  background-color: #FFE4E1;
+  border-color: #DB7093;
+  color: #333;
+}
+
+
