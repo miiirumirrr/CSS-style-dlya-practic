@@ -1,8 +1,7 @@
+
 /* Общий сброс */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* Основные стили */
@@ -57,7 +56,7 @@ body {
   left: 0;
   width: 100%
   height: 100%;
-  background-size: auto 1450px;
+  background-size: auto 150px;
 }
 
 /* Слой 2 - Цирковь */
@@ -70,7 +69,7 @@ body {
   left: 0;
   width: 100%
   height: 100%;
-  background-size: auto 1450px;
+  background-size: auto 150px;
 }
 
 /* Слой 3 - Пласт */
@@ -83,7 +82,7 @@ body {
   left: 0;
   width: 100%
   height: 100%;
-  background-size: auto 1450px;
+  background-size: auto 150px;
 
 /* Слой 4 - Колесо и набережная */
 .layer-4 {
@@ -95,7 +94,7 @@ body {
   left: 0;
   width: 100%
   height: 100%;
-  background-size: auto 1450px;
+  background-size: auto 150px;
 }
 
 /* Слой 5 - Горы */
@@ -108,7 +107,7 @@ animation: animation_fg linear 120s infinite both;
   left: 0;
   width: 100%
   height: 100%;
-  background-size: auto 1450px;
+  background-size: auto 150px;
 }
 
 /* Объекты. Бабушка и девушка */
@@ -133,6 +132,10 @@ animation: animation_fg linear 120s infinite both;
 	width: 100%;
 	height: 100%;
 	background-size: auto 400px;
+	animation: animation_object-2 linear 10s infinite both;
+}
+
+.object-2 {
 	animation: animation_object-2 linear 15s infinite both;
 }
 
@@ -155,3 +158,4 @@ animation: animation_fg linear 120s infinite both;
 	}
 
 }
+
