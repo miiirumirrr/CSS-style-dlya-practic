@@ -3,17 +3,20 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #333;
   line-height: 1.6;
+  flex: 1;
 }
 
 /* Стили для header */
 header {
-  background: linear-gradient(135deg, #8B0000 0%, #8A2BE2 100%);
+  font-family: 'Roboto', sans-serif;
+  background-color: #8A2BE2;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Стили для footer */
 footer {
-  background: linear-gradient(135deg, #4B0082 0%, #800000 100%);
+  font-family: 'Roboto', sans-serif;
+  background-color: #800000;
   color: #fff;
   margin-top: 30px;
 }
@@ -44,5 +47,6 @@ footer {
   border-color: #DB7093;
   color: #333;
 }
+
 
 
