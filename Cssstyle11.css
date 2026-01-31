@@ -182,8 +182,6 @@
   
 }
 
-15) Цвет кнопки при положении курсора:
-
 #menu-button.change-color div {
   background: rgba(0, 0, 255); /* курсор на кнопке закрыть */
 }
@@ -204,7 +202,7 @@
   position: absolute;
   height: 0;
   width: 100%;
-  background: url(""); /* ваше перекрывающее фото */
+  background: url("https://raw.githack.com/miiirumirrr/CSS-style-dlya-practic/4c83f2abe06cab88ef9a4884078834d5df723b42/photo5/photo_5_2026-01-28_12-24-56.jpg"); /* ваше перекрывающее фото */
   left: 0;
   top: 0;
   transition: .5s ease-in;
@@ -257,4 +255,5 @@
 	padding-left: 3px;
 	font-family: 'Roboto', sans-serif;
 }
+
 
