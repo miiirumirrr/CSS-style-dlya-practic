@@ -8,7 +8,6 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
-    background: linear-gradient(135deg, #f9f7ff 0%, #f0f9f0 100%);
 }
 
 #wrapper {
@@ -25,7 +24,7 @@ nav {
 
 nav ul {
     text-align: left;
-    display: flex;
+    display: 100%;
     margin: 0;
     padding: 1em 1em 1em 0;
     list-style: none;
@@ -37,7 +36,7 @@ nav ul li {
     margin-right: .01em;
     position: relative;
     padding: 1em 1.5em;
-    background: #6a11cb;
+    background-color: #6a11cb;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -137,6 +136,7 @@ footer {
     clear: both;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
+
 
 
 
